@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Випалювач мізків</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Випалювач мізків" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Випалювач мізків</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ТЧ 12-05</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 6</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b>Архів НДІЧАЗ, секція ТЧ 12-05<br><br>
+                        Станом на травень 2012 року до Прип’яті з півдня Зони залишилася єдина дорога, не перекрита
+                        аномаліями. Вона вела через так званий «Випалювач мізків» — величезну псі-установку, яка
+                        зомбувала кожного, хто потрапляв під дію її випромінювання. Лише монолітівці не піддавалися її
+                        впливу. Сталкер на прізвисько Стрілець зміг отримати від доктора Сахарова прототип нейрозахисної
+                        підкладки до шолома та відкалібрувати його, щоб захистити від дій антени.<br><br>
+                        Прорвавшись з боями крізь ряди монолітівців до лабораторії Х-10, з якої керували «Випалювачем»,
+                        він зміг вимкнути установку, відкривши дорогу до Прип’яті і ЧАЕС усім охочим.<br><br>
+                        Звістка про вимкнення установки швидко поширилася Зоною. Військові одразу ж підготували операцію
+                        «Моноліт», частиною якої був також десант і на території «Випалювача мізків». У цей час всі
+                        фракції виявили наміри закріпитися у Прип’яті. Навіть досвідчені нейтрали, які зазвичай не брали
+                        участь у глобальних заворушеннях, збиралися в команди, щоб прорватися до міста. Воля і Долг
+                        наввипередки намагалися закріпити за собою контроль не тільки над мертвим містом, але й над
+                        проходом до ЧАЕС. По всій Прип’яті йшли бої всіх проти всіх.<br><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Матеріали КПК № 6. Вилучено у сержанта СОП<br>
+                        <b>Військовий:</b> Дорога на Прип’ять знову відкрита! Не знаю, що там діється, але всіх підняли
+                        по тривозі і наказали готуватися до вильоту. Я в екіпажі, який летить до сумнозвісного
+                        «Випалювача». Інші хлопці летять на ЧАЕС. Невже ми скоро покінчимо з цією клятою Зоною?<br><br>
+                        Спротив мінімальний. Більша частина монолітівців перебита. Але, схоже, на бій сталкерів із
+                        монолітівцями прибігли і мутанти, щоб поживитись свіжим падлом. Двоє з наших отримали поранення
+                        від кровососа, але ми розібралися з тією падлюкою. Просив же старшину, щоб видав тепловізори, ми
+                        б його раніше помітили! Скнара!<br><br>
+                        Тут особливо немає чого брати під контроль. Той, хто вимкнув установку, заодно тут все і
+                        розламав. Ця станція тепер не має особливої цінності. Хіба що з наукової точки зору, чи якщо
+                        розрізати на метал.<br><br>
+                        Вчора прийшла інформація, що екіпажі, які полетіли до ЧАЕС, загинули. Коли нас евакуюють — досі
+                        немає інформації. Припаси вже закінчуються, а від навали сталкерів і мутантів відбиваємося тим
+                        БК, який залишився від фанатиків.<br><br>
+                        Ніколи не думав, що зрадію сталкерській морді. Вчора крізь ряди анархістів до нас прорвався
+                        загін Долгу. Добре, що вони носять чорну форму, яка чудово вирізняється на тлі всіх інших в
+                        Зоні. Домовились з їхнім командиром, що вони допоможуть нам пройти до краю Зони. Тепер
+                        залишилося зовсім трохи — прорватися на «Росток», а звідти і наші неподалік.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

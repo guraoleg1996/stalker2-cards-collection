@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Загони евакуації</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Загони евакуації" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Загони евакуації</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ПЗ 06-06</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 3</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Архів НДІЧАЗ, секція ПЗ 06-06 <br>
+                        У перші дні після Другої катастрофи Наглядова рада проєкту «Х» прийняла термінове рішення
+                        евакуювати все цінне і знищити те, що не можна вивезти.<br><br>
+                        З числа військових оперативно сформували Загони Особливої Евакуації (ЗОЕ). Їх одразу відправляли
+                        за приблизними координатами наукових об’єктів з індексом «Х». Окремим повідомили про існування
+                        Монорельсу — підземної транспортної системи, що дозволяла обійти частину аномалій. Інші загони
+                        отримували у розпорядження вертольоти, БТР-и та вантажівки. Майже всі вони були знищені одразу
+                        після входу в нещодавно утворену Аномальну Зону.<br><br>
+                        15 червня 2006 року один із загонів, який рухався Монорельсом до Х-19, дістався комплексу з
+                        наказом евакуювати результати досліджень. Пробившись крізь опір мутантів, вони змогли дійти до
+                        мети і захопити частину результатів досліджень.
+                        16 червня 2006 року загін частково евакуював документи з Х-19 і відступив. Відхід був складним,
+                        вижили тільки двоє бійців. Тунель, яким вони мали залишити Зону, виявився заваленим.<br><br>
+                        Більшість операцій з евакуації не були успішними. Загони понесли великі втрати особового складу.
+                        Зафіксовані випадки дезертирства. Зрештою програму Загонів Особливої Евакуації згорнули. Зону
+                        визнали найнебезпечнішим місцем на планеті. Більшість матеріалів досліджень, що проводилися
+                        всередині, списали як безповоротно втрачені.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Матеріали КПК № 3. Знайдено в речах учасника загону особливої евакуації<br>
+                        <b>Військовий:</b> День перший. Просуваємось вглиб Чорнобильської Зони. По всій території
+                        розкидані незрозумілі утворення. Якісь з них видно неозброєним оком, якісь ні. Через них
+                        довелось спішитись і рухатись на своїх двох. Перша машина колони в’їхала в одну із таких
+                        аномалій. Спочатку кабіну стиснуло, наче вона в’їхала в стовп, а потім жбурнуло на декілька
+                        метрів у бік, наче наїхала на величезний фугас. З екіпажу не вижив ніхто. Їх ніби на фарш
+                        перекрутило всередині.<br><br>
+                        День другий. Коли ми відпочивали в одному з евакуйованих сіл, на нас напала якась незрозуміла
+                        сутність. Прозоре утворення, яке жбурляло в нас усе, що було не важче п’яти кілограмів. На жаль
+                        для Семенова воно схопило сокиру з сіней і жбурнуло йому в голову. Ще двох також поранило, коли
+                        в них поприлітали стільці та ще якесь металеве сільське приладдя. Довелось відступити. Капітан
+                        щось торочить про те, що ми маємо виконати завдання. Але це тільки початок, то що нас чекає в
+                        кінці?<br><br>
+                        День десятий. Я сам. Всі загинули. Вижив лише Тиряйло, але він втік. На підході до точки
+                        капітана схопила якась велетенська хрінь своєю ногою і просто розчавила. На мої постріли воно не
+                        реагувало і тому ми з Тиряйло відійшли. Це падло забрало мапу і я тепер поняття зеленого не маю
+                        де я є. З БК залишився один магазин. Ех, треба було хоча б забрати рюкзак капітана…
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

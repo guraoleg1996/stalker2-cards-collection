@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-3</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-3" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-3</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 08-90</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 36</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 08-90<br><br>
+            Лабораторія Х-3<br>
+            Розташування: Кордон.<br><br>
+            Призначення<br>
+            Дослідження впливу псі-випромінювання на живі організми, зокрема вирощування псі-бріонів — штучно виведених
+            ембріонів на основі генетичного матеріалу сільськогосподарських тварин.<br><br>
+            Основні відомості<br>
+            Х-3 є однією з найстаріших лабораторій проєкту «X». Успіхи науковців дозволили отримати істот, здатних
+            акумулювати, обробляти, контролювати та проєктувати псі-енергію. На основі напрацювань Х-3 у лабораторіях
+            Х-18 (дивись архівні дані секція ТЧ 05-86) та Х-5 (дивись архівні дані секція ТЧ 06-86) були створені
+            мутанти з псі-здібностями: псі-собака, контролер, бюрер та полтергейст. На певному етапі робіт було відкрито
+            дослідницький полігон «Оаза». В тестовому режимі він використовувався для моделювання та навіювання
+            позитивного образу мислення і заспокоєння.<br><br>
+            Особливості<br>
+            Інкубатор ІСВ-3 забезпечував вирощування організмів з псі-здібностями, що стало ключовим етапом у створенні
+            контролюючих та бойових мутантів для інших програм проєкту «X».
+            Після Другої катастрофи лабораторія була законсервована, частину документації евакуювали завдяки близькому
+            розташуванню до краю Зони. Попри це, точне розташування лабораторії втрачено.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 36. Перехоплено з переговорів Сидоровича<br>
+            <b>Сидорович:</b> Я тобі так скажу, по-тихому, без зайвих вух. Є в мене одна інформація… ласий шматок, якщо
+            з розумом підійти. На Кордоні, уяви собі, є Оаза. Не байка з бару, і не вигадка зелених — справжнє місце.
+            Там Зона ніби видихає: аномалії відсутні, радіація на нулі, і стоїш — як не в Зоні, а десь вдома.<br><br>
+            Сам я, зрозуміло, туди водити нікого не збираюсь. Я ж не благодійник. Але подумай головою: сталкери
+            заплатять, щоб просто побачити таке місце. Вчені — ще більше.<br><br>
+            Ідея проста як лом: продаємо квитки. Не папірці, звісно, а інформацію і маршрут. Хочеш — просто координати,
+            хочеш — з провідником, охороною і «гарантією повернення». Туди — одна ціна, назад — інша. Ризик є завжди, а
+            за ризик, як відомо, платять окремо.<br><br>
+            Головне — язик за зубами тримай. Про таке місце не кричать. Чим менше знають — тим довше воно годує. А мені,
+            знаєш, аби товар був рідкісний і попит стабільний. Оаза якраз із таких.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

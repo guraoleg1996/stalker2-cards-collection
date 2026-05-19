@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-17</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-17" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-17</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 07-00</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 38</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін</b>: Архів НДІЧАЗ, секція СЧ 07-00 <br><br>
+            Лабораторія Х-17<br>
+            Розташування: НТЦ «Малахіт»<br>
+            Основні відомості та призначення<br><br>
+            Лабораторія Х-17 створена для дослідження ноосфери та розробки технологій прямої взаємодії з нею.
+            Лабораторія спеціалізувалася на експериментальних методах зчитування, інтерпретації та візуалізації
+            інформаційних структур, пов’язаних зі свідомістю живих істот.<br><br>
+            Основним напрямом робіт у Х-17 була розробка Візіографа — унікального пристрою, призначеного для прямого
+            доступу до ноосфери. Після підтвердження існування ноосфери у 1995 році науковці дійшли висновку, що
+            інформація про свідомість усіх живих істот зберігається у специфічному прошарку так званої «тонкої матерії».
+            У межах програми С-Свідомості Візіограф розглядався як аварійний і водночас експериментальний засіб
+            «вивантаження» свідомості з цього середовища.<br><br>
+            Лабораторія Х-17 була розташована під промисловим майданчиком, у якому пізніше було організовано
+            Науково-дослідний центр «Малахіт».<br><br>
+            Попри те, що Х-17 пережила Другу катастрофу без критичних конструктивних ушкоджень, значна частина технічної
+            та наукової документації була втрачена або знищена. Це суттєво ускладнило подальшу реконструкцію повної
+            картини досліджень і справжнього потенціалу Візіографа.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 38. Вилучено з щоденника сталкера Іскри<br>
+            <b>Іскровець:</b> Коли ми з ученими вперше натрапили на той промисловий майданчик, він виглядав мертвим і
+            покинутим: іржаві каркаси цехів, перекинута техніка, бруд повсюди. Для мене це було чергове місце — таких у
+            Зоні десятки, але вчені майже одразу оживилися. Вони швидко зрозуміли, що комплекс має вдале розташування,
+            міцні конструкції й ідеально підходить для створення повноцінного наукового центру. Тоді ще важко було
+            повірити, що тут з’явиться НТЦ «Малахіт».<br><br>
+            У процесі детальнішого обстеження ми спустилися в підвальні приміщення, і саме там я відчув, що щось не
+            сходиться. Надто вже ці підвали не були схожі на звичайні заводські: товсті перегородки, гермодвері, дивні
+            кабельні траси, що йшли глибше під землю, ніші під складне обладнання. Я відразу зрозумів — це не просто
+            промисловий комплекс, а залишки однієї з Х-лабораторій. Вчені швидко дійшли того ж висновку.<br><br>
+            Та радість відкриття затьмарювала одна річ: жодної документації. Усі архіви або вивезли, або знищили ще до
+            нас. Я намагався з’ясувати номер лабораторії за характерними ознаками, але марно.<br><br>
+            Зате стало ясно інше: це місце вже колись служило великій науці Зони, і, мабуть, саме тому вчені так
+            впевнено вирішили зробити його своїм новим домом.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

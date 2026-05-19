@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>С-Свідомість</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="С-Свідомість" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">С-Свідомість</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ТЧ 12-06</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 7</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b>Архів НДІЧАЗ, секція ТЧ 12-06<br><br>
+                        Коли в Прип’яті тривали бої за можливість закріпитися і контролювати місто, командування СОП
+                        вирішило скористатися хаосом, який спричинило вимкнення «Випалювача мізків», і оперативно
+                        організувало операцію «Моноліт» для встановлення контролю над ЧАЕС. Попри вдалу висадку десанту
+                        з гелікоптерів біля станції, сектанти завзято опиралися штурму військових сталкерів. Військовим
+                        вдалося закріпитись на території станції, коли їх застав неочікуваний Викид. Лише кілька
+                        військових змогли врятуватися. Серед них — і полковник Ковальський.<br><br>
+                        Скориставшись сутичками між військовими сталкерами і монолітівцями, сталкер Стрілець зміг
+                        прорватися всередину ЧАЕС перед самим Викидом і відкрити двері до Х-7, використавши
+                        неавторизований декодер. Там він зустрівся з представником С-Свідомості, який запропонував
+                        пристати до вчених. Сталкер прийняв рішення знищити вчених. Можливий мотив таких дій Стрільця —
+                        надія на зникнення аномальної активності у Зоні.<br><br>
+                        Ліквідація капсул життєзабезпечення, в яких перебували учасники проєкту, призвела до руйнування
+                        керуючої структури, що стримувала хаотичні процеси Зони. Як наслідок, Зона втратила
+                        централізований контроль, а її поведінка стала ще менш передбачуваною. Почастішали викиди,
+                        змінилися аномальні поля, частина територій зазнала суттєвих трансформацій.<br><br>
+                        Угруповання «Моноліт» припинило своє існування. Бійці, позбавлені псі-контролю, гинули, втрачали
+                        розум або повільно повертали собі фрагменти власної особистості.<br><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b>Матеріали КПК № 7. Вилучено у полуденівця<br><br>
+                        <b>Монолітівець:</b> Він зник раптово. Як тиск… як гравітація, що тримала усе докупи. Ще вчора
+                        кожен крок був правильним, кожен постріл — виправданим, кожна смерть — необхідною. А сьогодні —
+                        тиша. Порожнеча, від якої дзвенить у вухах. Я стояв на позиції й чекав наказу. Через звичку, а
+                        не наказ. Але наказу немає. Моноліт мовчить. Я намагаюся почути хоч відлуння: шепіт, імпульс,
+                        біль у голові, хоч щось. Нічого. Лише вітер і тріск дозиметра. Разом із голосом зникла
+                        впевненість. Світ став… важчим і чужим. Раніше він був простим: ворог — ціль, яку слід знищити.
+                        Тепер з’явилися питання. Чому в мене тремтять руки? Чому я не пам’ятаю нічого, що було до цього?
+                        У голові спливають уривки: накази як спогади. Ці спогади чужі і водночас мої. Невже в мене було
+                        життя до цього? На Великій. Бо якщо це правда, тоді ким я був увесь цей час? Коли Моноліт зник,
+                        дехто з братів кричав. Хтось стріляв навмання, ніби намагався пробити тишу кулями. Але більшість
+                        сидить, притулившись до стін, і дивляться в одну точку. Ми ще разом, але вже не єдині. Немає
+                        центру. Немає волі, що тримає нас гуртом. Я не знаю, що робити далі. Моноліту більше немає, є
+                        лише Зона. Вона просто є. Холодна, байдужа, агресивна. Якщо в мені лишилось хоч щось людське,
+                        мені доведеться навчитися жити з тим, що я зробив. Якщо ні — тоді тиша всередині стане моїм
+                        новим Монолітом.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

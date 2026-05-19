@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Грозова Ягода</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Грозова Ягода" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Грозова Ягода</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 26-92</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 46</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 26-92 <br><br>
+            Грозова ягода — один із найбільш відомих та міфологізованих артефактів електричної природи. Рідкісність та
+            здатність суттєво підняти витривалість його носія надали артефакту легендарного статусу серед
+            сталкерів.<br><br>
+            Без відповідного захисту володіння артефактом є вкрай небезпечним через його сильну радіоактивність.<br><br>
+            Цікава особливість: при нагріванні понад 78 градусів Цельсія провокує групові галюцинації утопічного типу.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 46. Вилучено з КПК сталкера<br><br>
+            <b>Нейтрал:</b> Ми тоді стали на ніч між двома корівниками на Кордоні. Місце наче тихе, аномалій небагато,
+            радіація в межах допустимого. Розвели багаття, кинули казанок, хтось дістав консерви. Я скинув рюкзак ближче
+            до вогню, не думаючи про наслідки. Втома така, що байдуже, де що лежить. Уже потім зрозумів, яку дурість
+            зробив.<br><br>
+            Спершу все було як завжди. Тільки вогонь горів якось занадто рівно, без тріску, ніби хтось його налаштував.
+            Ми заговорили — спокійно, без матюків, без напруги. Незвично. І тут я відчув, що мені… добре. По-справжньому
+            добре — так, як давно не було.<br><br>
+            Перед очима Зона почала змінюватися. Наче корівники хтось відбудував наново, стіни пофарбовані, світло
+            проведене. Я бачив, як сталкери йдуть дорогою без зброї, сміються, вітаються одне з одним, ніби тут ніколи
+            не було страху. Один із хлопців сказав, що чує музику. І я теж почув її — тиху, знайому, ніби з
+            дитинства.<br><br>
+            Нас привів до тями різкий тріск — рюкзак спалахнув іскрами. Аж тепер я згадав, що в ньому лежала Грозова
+            ягода, яка нагрілася від багаття. Я чув від інших сталкерів, що таке трапляється, якщо артефакт сильно
+            нагріти, але сам побачив вперше.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

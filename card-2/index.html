@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Аномальна зона</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Аномальна зона" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Аномальна зона</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ПЗ 04-06</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 2</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Архів НДІЧАЗ, секція ПЗ 04-06 <br><br>
+                        Після доведення існування ноосфери, своєрідної інформаційної оболонки планети, пов’язаної з
+                        усіма розумними істотами, група науковців «С-Свідомість» визначила за мету встановити з нею
+                        контакт, щоб створити ідеальний світ, усунувши з ноосфери відомості про людські вади. Спершу
+                        вчені розпочали експеримент із простим підключенням, щоб перевірити можливість впливу на неї.
+                        Оскільки окрема свідомість не має достатньої сили для взаємодії з ноосферою, учасники проєкту
+                        об’єднали свої розуми в єдину структуру за допомогою капсул О-КТА.<br><br>
+                        10 червня 2006 року експеримент вийшов з-під контролю. Пробій призвів до вивільнення величезної
+                        енергії ноосфери, що впала на Землю, викривляючи реальність навколо. Явище нагадувало палаючий
+                        потік світла з неба, а згодом почався землетрус. Більшість військових, що забезпечували охорону
+                        Периметру тоді ще звичайної Чорнобильської Зони Відчуження, а також значна частина людей, які
+                        перебували на території, загинули миттєво.<br><br>
+                        Урядові сили оточили новоутворену Зону та почали направляти всередину розвідгрупи. Жодна з них
+                        не досягла поставленої мети, оскільки отримана від розвідгруп інформація була суперечливою та
+                        неправдоподібною. Зафіксовано розповіді вцілілих про неймовірні природні аномалії та химерних
+                        істот із надприродними здібностями
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Матеріали КПК № 2. З витягу рапорту допиту затриманого сталкера<br><br>
+                        <b>Боєць МСОП</b>: Зі слів затриманого встановлено, що в перший день незаконного проникнення на
+                        територію Чорнобильської Зони він подолав інженерні загородження у вигляді колючого дроту. Під
+                        час руху ледь не потрапив у аномальне утворення невстановленого типу, внаслідок чого особисту
+                        флягу було відірвано від рюкзака та закинуто на гілля дерева. Затриманий зазначає, що ураження
+                        обмежилося втратою спорядження, тілесних ушкоджень він не отримав. Надалі він повідомляє, що у
+                        покинутому житловому будинку виявив артефакт невідомого походження, який за зовнішніми ознаками
+                        нагадував деформовану, розплавлену та повторно застиглу деревину. За твердженням затриманого,
+                        рівень радіації в приміщенні був підвищеним, тоді як безпосередньо біля артефакту показники
+                        дозиметра дорівнювали нулю.<br><br>
+                        У другий день перебування в Зоні затриманий вирішив залишитися на ночівлю в одному з покинутих
+                        будинків, мотивуючи це небажанням пересуватися у темний час доби через ризик потрапляння в
+                        аномалії. Вночí, за його словами, вiн чув стороннi звуки, якi інтерпретував як голоси колишнiх
+                        мешканцiв будинку, їхнi розмови та сварки. Вранцi затриманий зафiксував змiну розташування
+                        предметiв інтер’єру, зокрема лавки, яка, за його твердженням, напередоднi стояла пiд вiкном, а
+                        зранку опинилася бiля печi.<br><br>
+                        У вечíрнíй час другого дня, пíд час повторного подолання колючого дроту в напрямку з Аномальної
+                        Зони, вiн був виявлений і затриманий вiйськовим патрулем. Ус³ реч³, як³ несуть рад³ац³йну
+                        загрозу або науковий інтерес, у затриманого vилучено та передано vченим для подальшого
+                        досл³дження.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

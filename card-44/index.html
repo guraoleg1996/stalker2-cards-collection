@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-19</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-19" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-19</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція CЧ 10-04</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 44</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція CЧ 10-04 <br><br>
+            Лабораторія Х-19<br>
+            Розташування: ЧАЕС<br><br>
+            Основний напрям досліджень<br>
+            Під керівництвом доктора Войтенко, однієї з учасниць групи С-Свідомість, у лабораторії X-19 проводили
+            генетичні дослідження, спрямовані на вивчення впливу ноосфери на структуру ДНК живих організмів. У ході
+            експериментів аналізувалися мутаційні зміни, що виникали під дією впливу аномальної енергії ноосфери.
+            Паралельно велися роботи з пошуку біо-механізмів, здатних забезпечити стабільну взаємодію біологічних систем
+            з аномальною енергією. Одним із таких напрямків було створення експериментальних псі-організмів, які могли б
+            виступати носіями або провідниками аномального поля і водночас бути потенційною ланкою між живою матерією і
+            штучними псі-структурами мережі «Х».<br><br>
+            Результати досліджень<br>
+            Дослідження, проведені в X-19, стали науковою та методологічною основою для створення установки «Я-1М» у
+            Х-16 (дивись архів, секція ТЧ 07-90). Отримані в лабораторії дані дозволили розробити концепцію штучної
+            псі-структури, здатної до обробки величезних масивів даних ноосфери. На пізніх етапах проєкту планувалося
+            здійснити синхронізацію псі-організмів, створених у X-19, із «Я-1М», що мало забезпечити контрольований
+            двосторонній обмін між живими системами та штучним псі-контуром.<br><br>
+            Статус<br>
+            Через розташування під ЧАЕС, територія сильно забруднена радіацією та аномальними утвореннями. Інформація
+            про точне розташування лабораторії відсутня, що наразі унеможливлює її пошуки.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 44. З журналу досліджень Х-19<br><br>
+            <b>Вчений:</b> 18 грудня 2005 року. Сьогоднішнє спостереження вибивається з усіх попередніх моделей. Об’єкт
+            демонструє не просто реакцію на поле. Він поводиться, наче вбудований у нього. Зв’язок з ноосферою не
+            виглядає пасивним або резонансним, як у попередніх зразків. Це радше короткий уривчастий діалог.<br><br>
+            Найбільше мене дивує емоційна складова, якщо це можна так назвати. У моменти збудження об'єкта показники
+            середовища змінюються без зовнішнього впливу: падає тиск, електростатичний фон стає нестабільним,
+            з’являються слабкі аномальні флуктуації. Коли ж об’єкт заспокоюється — усе повертається до норми.<br><br>
+            Навколишній простір ніби підлаштовується під його стан.<br><br>
+            Найцікавішою була фіксація відчуття присутності наміру. Об’єкт ще не усвідомлює цього зв’язку, але ноосфера
+            вже явно реагує, ніби визнає нового співрозмовника. Якщо цей зв’язок стабілізується, річ буде не в тому, чи
+            він впливатиме на середовище. Питання: наскільки далеко може сягнути цей вплив?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

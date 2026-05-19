@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Агата</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Агата" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Агата</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, справа СЧ 22-26</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 19</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, витяг із особової справи СЧ 22-26 <br><br>
+            <b>Роботизований голос:</b>Недостатній рівень доступу. Для отримання доступу зверніться до служби безпеки
+            Наглядової ради.<br><br>
+            <b>Далін:</b>Тобто недостатній? Це якась помилка. Я ж директор НДІЧАЗ. У мене має бути найвищий рівень
+            доступу! Е ні, полковнику, я в ці ігри не граю! Я маю знати, що в її досьє.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 19. Записано системою безпеки у НДІЧАЗ<br><br>
+            <b>Вчений 1:</b>Ти замислювався, чи Агата взагалі людина?<br>
+            <b>Вчений 2:</b>Обережно. Такі питання тут краще не ставити.<br>
+            <b>Вчений 1:</b>Сам подумай: вона реагує швидше, ніж аналітичні відділи, і часто ставить питання, до яких ми
+            самі доходили б тижнями.<br>
+            <b>Вчений 2:</b>Колего, це можна пояснити доступом до закритих даних.<br>
+            <b>Вчений 1:</b>Для розуміння таких даних треба як мінімум докторський ступінь із фізики! Вона наполягла на
+            зміні параметра, який виявився ключовим, хоча тоді всі вважали його другорядним. Люди не бачать Зону
+            цілісно. А вона бачить. І при цьому ніколи там не була!<br>
+            <b>Вчений 2:</b>Ви підозрюєте, що вона — не людина?<br>
+            <b>Вчений 1:</b>Мені важко стверджувати. Але я розумію одне точно: вона не просто наглядач від Наглядової
+            ради, вона хтось чи-и-и… «щось» значно більше, і НДІЧАЗ для неї чи її володарів лише інструмент для якоїсь
+            грандіозної мети.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

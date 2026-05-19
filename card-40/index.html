@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Дуга</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Дуга" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Дуга</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ЧН 05-70</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 40</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція ЧН 05-70 <br><br>
+            Загоризонтна радіолокаційна станція «Дуга» (військовий індекс 5Н32)<br><br>
+            Розташування і призначення<br>
+            Загоризонтна радіолокаційна станція була первісно створена як елемент системи раннього виявлення пусків
+            міжконтинентальних балістичних ракет. Розташована поблизу військової бази Чорнобиль-2, антена комплексу була
+            найбільшою спорудою в регіоні ще до аварії 1986 року, і від самого початку мала статус особливо секретного
+            військового об’єкта.<br><br>
+            Паралельно з офіційним призначенням «Дугу» розглядали як перспективну платформу для нетрадиційних
+            досліджень. Учені НДІ «Радіохвиля» (місто Лиманськ) проводили роботи з адаптації антенного комплексу для
+            прийому та випромінювання псі-сигналів. Для цього поблизу інституту було збудовано зменшену експериментальну
+            копію антени, на якій відпрацьовували режими, небезпечні для використання на основному об’єкті.<br><br>
+            Основні відомості<br>
+            Після Першої катастрофи інтерес до «Дуги» різко зріс. Виявлення мережі Х-лабораторій у Зоні дало підстави
+            вважати станцію одним із вузлових елементів інфраструктури проєкту «X», здатним забезпечувати
+            широкомасштабний псі-вплив. Саме на базі напрацювань стосовно «Дуги» згодом було створено пристрій
+            пригнічення агресії «Веселка», більш відомий як «Випалювач мізків».<br><br>
+            Після утворення Аномальної Зони станція з певного моменту почала використовуватись як головна антена
+            КПК-зв’язку.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 40. Вилучено з КПК сталкера<br><br>
+            <b>Сталкер:</b> Я довго дивився на «Дугу» здалеку. Вона височіла над Зоною, мов іржавий хребет, і всі знали:
+            лізти туди — погана ідея. Та мене саме це й тягнуло. Я дочекався моменту, коли охорона була зайнята чимось
+            іншим, і, тримаючись тіней, добрався до опор. Коли торкнувся холодного металу, страх зник, залишилось лише
+            дивне захоплення.<br><br>
+            Підійматися було важко: сходи рипіли, вітер бив у лице, під ногами — порожнеча. Але що вище я ліз, то менше
+            відчував втому, ніби сама конструкція дозволяла йти далі.<br><br>
+            Нагорі Зона відкрилася зовсім іншою. Прип’ять і ЧАЕС лежали внизу мертвими плямами бетону, що визирали з-за
+            лісу, вдалині мерехтіли аномалії. Я бачив Янтар, темні болота і навіть далекий Кордон. З висоти Зона не
+            здавалася ворожою — лише величезною, байдужою і по-своєму красивою. Я швидко пішов, але той краєвид
+            запам’ятав назавжди.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Таченко</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Таченко" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Таченко</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ПП 62-73</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 41</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, витяг з особової справи ПП 62-73 <br><br>
+            Позивний: «Генерал Таченко»<br>
+            Справжнє ім’я: невідоме<br>
+            Вік: 45<br>
+            Фракція: Долг<br>
+            Статус: загинув<br>
+            Досьє відкрито: 08.08.2012<br><br>
+            Загальна характеристика<br>
+            Генерал Таченко — колишній військовий, учасник одного з Загонів евакуації. Обірвав зв'язок та вирішив
+            залишитися в Зоні, організувавши Долг, першу сталкерську фракцію. Його авторитет ґрунтувався не на посаді, а
+            на особистому лідерстві, коли сама присутність Таченка миттєво забезпечувала дисципліну та порядок. Він
+            сприймався як людина війни, для якої мир — лише коротка пауза між операціями.<br><br>
+            Риси характеру<br>
+            Непоступливий, жорсткий і схильний до тотального контролю. Таченко не визнавав компромісів і напівзаходів,
+            вважаючи їх проявом слабкості. Він дивився на світ як на сукупність проблем, що потребують радикальних
+            рішень, а себе вважав єдиним, хто здатен винести тягар відповідальності за них. Вимога абсолютного
+            підпорядкування була продиктована переконанням, що тільки жорстка ієрархія забезпечує виживання.<br><br>
+            Ставлення до війни та Зони<br>
+            Він воював не лише з конкретними загрозами, а й із самою природою Зони та з тими, хто недооцінює її
+            небезпеку. Для нього Зона — це не загадка, а противник, якого необхідно стримувати будь-якою ціною.<br><br>
+            Принципи та переконання<br>
+            «Обов’язок понад усе» — не гасло, а основа його світогляду. Таченко був готовий жертвувати ресурсами, людьми
+            й навіть власним життям заради глобальної безпеки. Саме ця готовність до крайніх рішень викликала до нього
+            повагу й страх одночасно.<br><br>
+            Поточний стан<br>
+            За невідомих обставин загинув у просторовій аномалії.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 41. Вилучено з КПК майора Долгу Кривоноса.<br><br>
+            <b>Долгівець:</b> Я зайшов у Зону ще військовим, у перші місяці після того, як вона утворилася. Нас
+            відправили незрозуміло за яким хріном без нормальних мап місцевості. Один неправильний маневр — і ми
+            загубилися. Зв’язку не було, орієнтирів теж.<br><br>
+            Коли з’явилися мутанти, стало ясно: нас тут поховають. Вони лізли з усіх боків. Ми відбивалися, рахуючи
+            набої і економили кожен постріл. Коли залишилися майже порожні магазини, я вже готувався з ножем продати
+            своє життя якнайдорожче.<br><br>
+            І тоді з-за пагорба вдарив організований вогонь. Чітко, холодно, без метушні. Мутантів відсікли, ніби ножем.
+            Я вперше побачив Таченка — спокійного, зібраного, з поглядом людини, яка знає, що робить. Його загін діяв як
+            єдине ціле. Вони не рятували нас — вони просто виконували свій обов’язок.<br><br>
+            Після бою він сказав, що Зона — це загроза для всього людства. Або ти воюєш проти неї, або вона забере все,
+            що має для тебе хоч якусь цінність. І запропонував приєднатися до Долгу.<br><br>
+            Я погодився. Починав сержантом, без ілюзій і з мінімальним набором спорядження. Ішли роки, я вчився,
+            виживав, командував. Тепер я — майор Долгу. І кожного разу, виходячи в рейд, згадую той день, коли мене
+            витягли з пекла і дали мету, заради якої варто стояти до кінця.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

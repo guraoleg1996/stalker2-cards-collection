@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Альфа</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Альфа" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Альфа</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 19-05</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 45</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 19-05 <br><br>
+            Альфа-артефакт — перший відомий у світі артефакт аномального походження. Вперше отриманий у 1995 році під
+            час Першого Карибського експерименту, ще задовго до утворення Аномальної Зони.<br><br>
+            Після виявлення артефакт був залучений до досліджень у межах проєкту «X» як потенційне джерело аномальної
+            енергії нового типу. У ході експериментів встановлено, що Альфа-артефакт здатен перетворювати електричну
+            енергію на псі-поле. Його унікальні властивості були використані для живлення мережі «X» та установки
+            «Моноліт».<br><br>
+            Наукові підрозділи НДІЧАЗ неодноразово намагалися відтворити Альфа-артефакт шляхом штучного синтезу на фермі
+            артефактів. Усі спроби завершилися невдачею, що підштовхнуло вчених НДІЧАЗ до проведення Другого Карибського
+            експерименту. Операція зазнала зриву внаслідок диверсії з боку сталкерів фракції Іскра.<br><br>
+            Попри це в результаті експерименту утворився другий відомий Альфа-артефакт, що підтвердило можливість його
+            появи в неконтрольованих умовах.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 45. З особистих записів доктора Даліна<br><br>
+            <b>Далін:</b> Я ловлю себе на думці, що сумніви — це не слабкість ученого, а його єдиний захист. Усі
+            говорять про Скіфа так, ніби він уже тримає Альфа-артефакт у руках. Чутки сталкерів — такий собі доказ. Але
+            легенди не приносять артефакти. Їх приносять люди. А люди помиляються. З чого він взяв, що шукає саме
+            Альфу?<br><br>
+            Скіф, безперечно, здібний. Проте Альфа-артефакт — не черговий трофей із Зони. Він не лежить і чекає, поки
+            його піднімуть.<br><br>
+            Мене непокоїть інше: чи зможе Скіф розпізнати момент, коли треба вчинити правильно? Раптом хтось вирішить
+            переманити його кращими умовами? Я не відкидаю такої можливості. Якщо хтось і здатен принести Альфу, то це
+            саме той, хто не до кінця розуміє, що він несе.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

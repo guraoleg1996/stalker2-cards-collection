@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Фауст</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Фауст" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Фауст</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, справа СЧ 72-66</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 15</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, витяг із особової справи СЧ 72-66 <br><br>
+            Позивний: «Фауст»<br>
+            Справжнє ім’я: невідоме<br>
+            Вік: 45<br>
+            Фракція: Моноліт<br>
+            Статус: лідер фракції<br>
+            Досьє відкрито: 20.08.2012<br><br>
+            Походження<br>
+            Фауст — унікальний продукт програми «Контролер». С-Свідомість розглядала його як майбутнього генерала армій
+            монолітівців, однак сам Фауст від самого початку сприймав С-Свідомість як демонів, що заглушують голос
+            істинного Бога. Після розстрілу Стрільцем науковців і зникнення голосу «Моноліту» Фауст втратив сенс
+            існування. Сліпого та психічно дезорієнтованого Фауста підібрав Бродяга й привів у Полудень.<br><br>
+            Нейрофізичні особливості<br>
+            Попри фізичну сліпоту, Фауст сприймає реальність у псі-спектрі та володіє повним набором здібностей
+            контролера. Тривалий час він приховував це, не бажаючи викликати підозру.<br><br>
+            Діяльність у Полудні<br>
+            Поступово Фауст вирішує повернути поклик «Моноліту», щоб примусити інших знову його почути. Він швидко
+            еволюціонував із замкненого фанатика на харизматичного проповідника й лідера. Ініціював операцію із
+            використанням сердечника сканера, доставленого до НДІЧАЗ, та під час експерименту перезаписав Сигнал
+            Моноліту на себе. У подальшому ініціював перепрограмування «Дуги» з метою багаторазового посилення
+            поклику.<br><br>
+            Поточний статус<br>
+            Під час здійснення заходів зі знищення відродженого Моноліту та нейтралізації Сигналу із «Дуги», Фауст був
+            ліквідований. Втім, враховуючи його аномальні псі-здібності, є причини підозрювати, що ліквідація Фауста
+            могла бути лише ілюзією.<br><br>
+            Ризики для Нацради НДІЧАЗ<br>
+            Фауст довів можливість автономного перехоплення та перезапису псі-сигналів рівня Моноліту, що створює
+            прецедент критичної загрози. Його приклад демонструє, що навіть одиничний суб’єкт здатний ініціювати масову
+            псі-радикалізацію, зірвати контроль над аномальною інфраструктурою та використати ресурси НДІЧАЗ проти
+            самого Інституту. Агенти спостереження мають здобути вичерпні докази того, що Фауст ліквідований, та що інші
+            результати експериментів не свідчать про аналогічну діяльність у Зоні.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 15. Вилучено із КПК монолітівця<br><br>
+            <b>Монолітівець:</b> Після відродження Моноліту я прокинувся серед руїн Сховища, з гулом у голові, що був
+            солодшим за тишу. Моноліт знову говорив. Не словами — наказом, впевненістю, правильністю кожного кроку. І
+            разом із покликом повернулося те, чого не було роками, — спогади.<br><br>
+            Я згадав Прип’ять. Порожні проспекти, розбиті вікна будинків. І його — Фауста. Він уже тоді мав особливий
+            погляд — погляд не сліпця, а командира. Він ішов попереду, завжди знав, де засідка, де пастка, де аномалія.
+            Ми йому довіряли без питань. Якщо Фауст казав «стояти», то ми стояли. Якщо казав «йдемо» — ішли, навіть у
+            саме пекло. Бо його голос був відлунням голосу Моноліту.<br><br>
+            Поклик Моноліта все розставив на місця. Фауст був моїм командиром тоді, залишається й тепер. Він поведе нас,
+            своїх дітей, до справжньої волі Моноліту, до того, що дійсно треба Зоні й справжньому Богу.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

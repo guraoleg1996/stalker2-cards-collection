@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-11</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-11" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-11</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 08-95</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 37</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 08-95 <br><br>
+            Лабораторія Х-11<br>
+            Розташування: район НДІЧАЗ<br><br>
+            Призначення<br>
+            Лабораторія Х-11 виконувала функцію дублюючого об’єкта для Х-7 та створювалася як окрема тестова й
+            налагоджувальна платформа. Її основним призначенням було проведення тестових запусків систем, налагодження
+            обладнання та безпечне дистанційне підключення до Х-7 без прямого залучення Генераторів.<br><br>
+            Основні відомості<br>
+            У процесі роботи над проєктом Генераторів вчені Лебєдєв і Каланча дійшли висновку, що використання основного
+            комплексу для експериментів високого ризику є недоцільним. Саме це стало підставою для створення Х-11 як
+            ізольованої лабораторії, здатної імітувати роботу ключових систем та відстежувати їхню поведінку під
+            навантаженням.<br><br>
+            Під час експериментів з підключення до ноосфери Х-11 виконувала роль пункту дистанційного спостереження,
+            збору телеметрії та контролю стабільності систем.<br><br>
+            Додатково лабораторія використовувалася як сховище зразків мутантів, доставлених з інших
+            Х-лабораторій.<br><br>
+            Завдяки інтеграції в єдину мережу Х-лабораторій, пов’язаних з Генераторами та збереженню лабораторії у
+            відносно працездатному стані після Другої катастрофи, територію над лабораторією було обрано для будівництва
+            Науково-дослідного інституту Чорнобильської аномальної зони.<br><br>
+            У 2021 році внаслідок збою під час експерименту з Альфа-артефактом, Х-11 зазнала критичних ушкоджень.
+            Аномальний викид призвів до значних руйнувань як підземного комплексу, так і інфраструктури Інституту. Після
+            інциденту всі роботи було припинено, а об’єкт визнали непридатним для подальшої експлуатації.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 37. З нотаток доктора Сироти<br>
+            <b>Вчений:</b> Х-11 і надалі справляла двоїсте враження. Як автономний об’єкт, вона збереглася напрочуд
+            добре: живлення, частина комунікацій, локальні обчислювальні вузли — усе це дозволяє проводити обмежені
+            експерименти без негайного ризику для персоналу. Проте що глибше занурюєшся в її архітектуру, то очевидніше
+            стає головне: ця лабораторія ніколи не замислювалася як самодостатня.<br><br>
+            Це не лабораторія, це вузол. Без активних з’єднань з усією мережею «X» більшість її потенціалу перебуває у
+            сплячому стані. Ми бачимо лише тінь того, чим вона могла бути.<br><br>
+            Окремі підсистеми прямо вказують на відсутні елементи: протоколи очікують відповіді від інших лабораторій,
+            журнали подій обриваються на етапах, де передбачалася передача керування, а симуляційні модулі не виходять
+            за рамки попереднього прогону. Відновлення лише Х-11 дає цікаві результати з точки зору історії проєкту, але
+            не відкриває його суті.<br><br>
+            Висновок напрошується сам собою, хоч і звучить небезпечно: для розкриття повного потенціалу Х-11 необхідно
+            відновити мережу «X» як систему — або принаймні її ключові вузли. Лише тоді лабораторія перестане бути
+            музеєм минулих амбіцій і знову стане інструментом.<br><br>
+            Схоже, такі думки спадають на думку не лише мені, а й Даліну, що викликає позитивні очікування!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

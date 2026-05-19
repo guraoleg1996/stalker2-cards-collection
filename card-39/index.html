@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-5</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-5" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-5</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ТЧ 06-86</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 39</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція ТЧ 06-86 <br><br>
+            Лабораторія Х-5<br>
+            Розташування: район Хімзаводу, під комплексом НДІ «Агропром».<br><br>
+            Напрями досліджень<br>
+            До катастрофи 2006 року лабораторія працювала над проєктом «Повідець» під керівництвом професора Двупалова.
+            Після утворення Аномальної Зони С-Свідомість змінила пріоритети на проєкт «Контролер», мета якого полягала у
+            створенні людських зразків з біологічними та технологічними модифікаціями — потенційних суперсолдатів,
+            здатних підключатися до мережі Моноліту. Після створення 18 прототипів експерименти досягли успіху — так
+            з'явився Фауст.<br><br>
+            Структура та функції<br>
+            Х-5 була підземним продовженням НДІ «Агропром», що офіційно досліджував вплив радіації на рослини та
+            можливість вирощування «чистих» продуктів на забруднених ґрунтах, а неофіційно — вплив на свідомість живих
+            істот. Лабораторія також слугувала одним із головних вузлів зв’язку між лабораторіями проєкту «X».<br><br>
+            Історія та статус<br>
+            У 2003 році НДІ «Агропром» очолив Павло Стриж, член С-Свідомості. Х-5 функціонувала якийсь період і після
+            Другої катастрофи. Відсутність основної частини наукового обладнання свідчить про ймовірну евакуацію
+            лабораторії. У 2011 році нижні яруси лабораторії було затоплено, остаточно унеможлививши доступ до частини
+            приміщень.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 39. З нотаток доктора Сухомлинського<br>
+            <b>Вчений:</b> 21.03.2002. Прототип 8 вкотре підтвердив нестабільність обраної схеми імплантації.
+            Летальність перевищує допустимі межі. У зразків, що вижили, телекінетичних проявів не зафіксовано. Натомість
+            спостерігаються неконтрольовані акти самошкідництва, що не корелюють із зовнішніми подразниками. Є підозра,
+            що суб’єкт усвідомлює власний стан і намагається його припинити.<br><br>
+            11.04.2002. Прототип 11 офіційно визнано невдалим ще на стадії теоретичного моделювання. Подальші практичні
+            роботи заборонені. Документацію передано в архів нижніх рівнів. Неофіційно можна використовувати як
+            негативний еталон для навчання молодшого персоналу.<br><br>
+            05.05.2002. Сьогодні мав неприємну розмову з професором Чубко. Він знову заважає санкціонованому доступу до
+            документації по роботі з «Придушувачем». У нього явні ознаки параної.<br><br>
+            22.08.2004. Робота професора Двупалова з його «Повідцем» дає чудові результати. Експеримент, проведений на
+            Прототипі 22, показав чудові результати контролю піддослідних. Навіть на дистанції 1 км вплив залишається
+            гарантованим. Вибірку визнано нерепрезентативною через використання одного виду піддослідних. Подано запит
+            на дозвіл розширення експерименту.<br>
+          </div><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

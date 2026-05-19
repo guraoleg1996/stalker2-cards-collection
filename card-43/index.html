@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Фундамент</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Фундамент" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Фундамент</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 08-03</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 43</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 08-03 <br><br>
+            Фундамент<br>
+            Розташування: Прип’ять<br><br>
+            Загальний опис<br>
+            Фундамент — центральна лабораторія проєкту «Х», що виконує функцію вузла керування та зв’язку всієї мережі
+            «Х». Саме через Фундамент здійснюється координація роботи підпорядкованих лабораторій, псі-установок і
+            допоміжних об’єктів мережі.<br><br>
+            Поточний стан<br>
+            Після відновлення мережі «Х» синхронізатор у Фундаменті відновив функціонування. Фіксується стабільна
+            псі-активність та обмін даними з іншими вузлами мережі. Точне розташування Фундаменту залишається невідомим
+            через протидію Корпусу розвідникам, що діють у Прип’яті.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 43. Підслухано біля сталкерського багаття<br>
+            <b>Сталкер:</b> Значить, діло було так. Надумав я з хлопцями здійснити рожеву мрію дитинства — побачити
+            Прип’ять. Знайшли одного провідника, який пообіцяв довести в обхід Рубежу та патрулів Корпусу. Але в один
+            бік. Так і каже: «Назад ви якось самі, я веду в один бік».<br><br>
+            Ми з хлопцями прикинули пламєгаси до носів і думаємо: «Будемо вирішувати проблеми у міру їх появи. Головне
+            туди дійти, а назад якось вийдемо». Ну значить, цей лоцман радіоактивний проклав нам курс до Рудого лісу,
+            там нам очі зав’язав і кудись повів, а пов’язки зняв уже в якомусь тунелі з Монорельсом. Каже: «Знімайте
+            пов’язки, бо можуть бути проблеми». Не знаю, про які проблеми він казав, бо з усіх проблем була зграя
+            тушканів та труба, в яку Сосна влупився головою.<br><br>
+            Вилізли ми через якийсь каналізаційний люк у дворі в Прип’яті. Що я вам скажу: вид цих багатоповерхівок таки
+            заворожує. Ми аж зависли, як той старий комп від реалістичних налаштувань графіки. А коли нас розморозило,
+            то цей провідник зник, наче в аномалії розчинився. То й біс із ним, домовленість така була. Так цей
+            Коперфільд Чорнобильський зник разом із люком, через який ми вилізли. Скільки не шукали дірку, так і не
+            знайшли.<br><br>
+            І тут Сосну в ударену голову осяяло: це ж тут артефакти вже давно ніхто не збирає. І дійсно. Тільки ми
+            увімкнули сканери, а там — Йосип на кобилі! — вони всі як один дружно задзвеніли! Я стільки артефактів в
+            житті не бачив. Ми за півгодини всі контейнери позабивали. Народ, там їх стільки, що ми дешеві вже навіть і
+            не брали. Це не Прип’ять, це натуральний Клондайк артефактів!<br><br>
+            Було б усе добре, поки Тарантіно не закортіло екскурсії, щоб його нехай. Типу, хлопці, тут же точно має бути
+            якась Х-лабораторія. Почухали ми свої тім'ячка і не придумали нічого кращого, ніж перевірити підвал готелю
+            «Полісся». Тільки ми туди спустилися, як нас оточив загін Корпусу. Думаю, тут нам і буде срака-байрака.<br><br>
+            Але їх старший раптом каже: «У вас сьогодні, хлопці, щасливий день. У мене боєць в аномалію залетів, треба
+            його оперативно до лікаря на Янів віднести».<br><br>
+            Самі розумієте, це пропозиція, від якої не можна відмовитися. Ну, значить, ми того пораненого — на носилки,
+            і втрьох, як той індійський моторикша, донесли аж до парадного входу Янова. Там на нас спочатку трохи скоса
+            подивились, але бачать, що не з порожніми руками стоїмо такі захекані. Типу, хлопці реально по ділу в двері
+            гупають.<br><br>
+            Коротше, фартило нам того дня на повну, хоч лотерейний квиток купуй: і Прип’ять побачили, і повні рюкзаки
+            артефактів винесли, і Корпус відпустив із миром, а не з кулею в голові.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

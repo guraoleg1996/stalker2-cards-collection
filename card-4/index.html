@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Рейд Стрільця</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Рейд Стрільця" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Рейд Стрільця</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція МС 10-11</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 4</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b>Архів НДІЧАЗ, секція МС 10-11<br>
+                        Літо 2011 року. Група сталкерів, до якої входили Стрілець, Клик та Привид, досягла території
+                        Чорнобильської АЕС з метою розгадки загадки виникнення Зони. Їм вдалося обійти аномалії та
+                        патрулі Моноліту та проникнути всередину «Саркофагу». У глибині об’єкта вони натрапили на
+                        масивні замкнені двері, які неможливо зламати або підірвати звичайними засобами. Клик зголосився
+                        виготовити декодер та вирушив на Смітник, щоб добути потрібні деталі у дигерів.<br><br>
+                        Під час спроби покинути небезпечну зону ЧАЕС Стрілець отримав важке поранення, що зменшило
+                        мобільність групи. Клик та Привид перенесли Стрільця до Доктора, ризикуючи власними життями.
+                        Доктору вдалося вилікувати Стрільця. Відновившись, останній вирушив на північ Зони, де отримав
+                        нові тяжкі травми у бою з мутантами та знову повернувся до доктора по допомогу. У цьому поході
+                        Стрілець знайшов артефакт із загадковими властивостями, який раніше нікому не траплявся у
+                        Зоні.<br><br>
+                        Серпень 2011 року. Під час чергового походу до центру Зони Стрілець зник безвісти після спроб
+                        прорватися всередину Саркофагу, продираючись крізь ряди бійців Моноліту та Чистого Неба.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Матеріали КПК № 4. Знайдено серед голосових щоденників Стрільця.<br>
+                        <b>Стрілець:</b> Я раніше такого ніколи не бачив. Я ще не до кінця розумію його суть, але
+                        відчуваю, що цей артефакт слід залишити собі, а не заганяти черговому баризі. Клик і Привид
+                        раптом змінили своє ставлення до мене, я став для них лідером. І щось мені здається, що не через
+                        те, що я знайшов цей артефакт, а тому що я володію ним.<br><br>
+                        Доктор якось не дуже зрадів моїй знахідці. Старий почав його вивчати і щось бурмотіти про його
+                        підозрілий псі-вплив. Він не любить усе, що не може пояснити. Краще хай займеться дресируванням
+                        монстрів, що зібралися навколо його сховку в очікуванні лікування.<br><br>
+                        Я знайшов його! Вже боявся, що хтось почистив мій сховок. Не слід було його ховати! Він міг
+                        стати в пригоді. Тепер я його нікому не віддам. Я знаю, що треба Зоні, і він допоможе досягти
+                        мети.<br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Воронін</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Воронін" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Воронін</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, справа ТЧ 25-62</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 22</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, витяг із особової справи ТЧ 25-62 <br><br>
+            Позивний: «генерал Воронін»<br>
+            Справжнє ім’я: невідоме<br>
+            Вік: 55<br>
+            Фракція: Долг<br>
+            Статус: лідер фракції<br>
+            Досьє відкрито: 23.05.2012<br><br>
+            Загальна характеристика<br>
+            Воронін — кадровий військовий, один із ідеологічних та організаційних стовпів Долгу. Перебуває у зрілому
+            віці, що безпосередньо впливає на його стиль керівництва та ухвалення рішень. Демонструє втому як фізичну,
+            так і психологічну, однак зберігає високий рівень самоконтролю, стратегічного мислення та авторитету серед
+            підлеглих. Добре обізнаний із внутрішніми процесами фракції, усвідомлює ослаблення Долгу після втрати
+            «Ростка» та падіння репутації фракції серед сталкерів, а його власної — серед своїх бійців.<br><br>
+            Психологічний профіль<br>
+            Ідеаліст старої школи, для якого боротьба із Зоною була сенсом життя. З віком акценти змістилися:
+            пріоритетом стало збереження життя особового складу. Це зробило Вороніна більш гуманним, але водночас
+            створило напругу з радикально налаштованими фігурами всередині Долгу, зокрема із Зулусом. Усвідомлює
+            зменшення фізичних сил з огляду на свій вік, тому не бере участі у польових операціях. Ймовірно, підбирає та
+            навчає свого наступника.<br><br>
+            Найбільш болючий досвід<br>
+            За командування Вороніна Долг поступово втратив свої позиції в Зоні. Ключове: він не зміг втримати базу на
+            «Ростку», і більше — був вимушений передати її ключовому ідейному противнику — Волі.<br><br>
+            Ідеологічна позиція<br>
+            Вірить у необхідність знищення Зони, але визнає, що особисто вже не здатен довести цю боротьбу до кінця.
+            Лояльний до ідеї Долгу, а не до власної влади.<br><br>
+            Інтерес і ризики для НДІЧАЗ<br>
+            Воронін становить помірний інтерес як стабілізуючий фактор у середовищі Долгу та потенційний гарант
+            прогнозованої поведінки фракції. Його прагматизм знижує ймовірність неконтрольованих ескалацій. Водночас,
+            ризиком є неминуча зміна лідерства: відхід або загибель Вороніна відкриває шлях радикальнішим фігурам, що
+            можуть зайняти жорстку позицію щодо статусу кво фракції та відновлення військових дій у Зоні. Рекомендовано
+            моніторинг процесу наступництва через неформальні канали впливу.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 22. Вилучено у лейтенанта Долгу Степка <br><br>
+            <b>Лейтенант Долгу:</b> Ще до «Д-4» стало зрозуміло, що Долг уже не той, яким був колись. Якось Воля
+            зібралася з силами і пішла на штурм «Ростка». Миклуха зміг зібрати чимало людей — кажуть, з усієї Зони. Ми
+            такого від них не чекали — наша розвідка це прошляпила.<br><br>
+            Воронін зреагував миттєво. Не кричав, не бігав — лише короткі накази. Кулемети на вузькі проходи, снайперів
+            на висоту, резерв — до підвалу. Він тримав оборону — а «Росток» був нашою фортецею. Ми вистояли. Волю
+            відкинули, із втратами з обох боків.<br><br>
+            Але знаєш, що найгірше? Вони відступали не з панікою, а з усмішками! Якби Долг був таким як раніше, вони б
+            навіть не наважились. Того дня і Воля, і ми зрозуміли — щось змінилось, змінилось не на нашу користь. А те,
+            що Воронін не наважився на контратаку, геть неприємно здивувало… Наш переїзд на Цементний був лише питанням
+            часу.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

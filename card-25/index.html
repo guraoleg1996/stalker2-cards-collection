@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Варта</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Варта" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Варта</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ЧС 21-06</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 25</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція ЧС 21-06 <br><br>
+            Загальна інформація<br>
+            Варта — воєнізована фракція, що фактично виконує функції «поліції» Зони. З моменту її появи рівень відкритих
+            збройних конфліктів між фракціями суттєво знизився, однак це радше побічний ефект, а не основна мета її
+            діяльності. Реальне завдання Варти — охорона наукового комплексу НДІЧАЗ, його персоналу, дослідницьких
+            об’єктів та супутньої інфраструктури. Фракція діє як силовий інструмент забезпечення стабільності в
+            інтересах науки та державного контролю над Зоною.<br><br>
+            Політичний статус та відносини з угрупованнями<br>
+            Після підписання договору «Д-4» Варта зберігає нейтральні відносини з більшістю фракцій Зони, виступаючи
+            арбітром і стримувальним фактором. Винятками є Іскра, яка веде партизанську боротьбу, та Моноліт. Варта
+            зберігає нейтралітет завдяки силовій перевазі.<br><br>
+            Комплектування та кадрова політика<br>
+            Особовий склад Варти формується з контрактників із Великої Землі, військових та сталкерів з інших фракцій.
+            Варта приваблює стабільним забезпеченням, дисципліною, чіткою ієрархією та умовами служби, які вважаються
+            одними з найкращих у Зоні. Водночас було виявлено недостатній рівень перевірки надійності особового складу,
+            оскільки частина командирів Варти виявлилися «сплячими» агентами Моноліту.<br><br>
+            Базування та інфраструктура<br>
+            Основна база Варти розташована на території Хімзаводу та виконує функцію командного, логістичного й
+            оборонного центру. Раніше фракція також утримувала базу «Ікар» на Затоні, а також мала постійну присутність
+            у НДІЧАЗ. Після інциденту в лабораторії Х-11 Варта була змушена залишити другорядні бази та стягнути основні
+            сили до Хімзаводу, зосередившись на обороні й реорганізації.<br><br>
+            Командування<br>
+            Командиром Варти є полковник Коршунов. Він розглядає Варту не як сталкерську фракцію, а як повноцінну силову
+            структуру, що має діяти за військовими стандартами навіть у хаотичних умовах Зони.<br><br>
+            Поточний стан<br>
+            Після подій, пов’язаних з Х-11, Варта перебуває в режимі концентрації сил і перегляду тактики. Попри втрату
+            частини інфраструктури, фракція зберігає статус однієї з найвпливовіших і найнебезпечніших сил у Зоні.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 25. Перехоплено з радіопереговорів бандитів<br>
+            <b>Бандит:</b> Шнур, прийом. Ти живий там, чи Варта вже все витрусила?<br>
+            <b>Бандит 2:</b> Живий, але злий. Як Варта Терикон зайняла, спокійніше не стало.<br>
+            <b>Бандит 1:</b> Та яке там спокійніше… Смітник тепер як прохідний двір. Патрулі шастають, шмон за
+            шмоном.<br>
+            <b>Бандит 2:</b> Учора взагалі цирк. Зупинили, рюкзак на землю, зброю покажи. Ледь у штани не залізли.<br>
+            <b>Бандит 1:</b> Мені сьогодні взуття перевіряли. Кажуть: «Знімай». Скоро й трухани будуть шманати.<br>
+            <b>Бандит 2:</b> І що найгірше — порядку більше не стало. Просто гайки закрутили, дихати нічим.<br>
+            <b>Бандит 1:</b> От коли паханом був Нестор — усе було чітко по понятіях. Він знав, кому занести і де
+            ходити. А тепер — жетони, протоколи…<br>
+            <b>Бандит 1:</b> Терикон, блін… Думали — тиха гавань для рівних хлопців, а вийшов маяк для перевірок.<br>
+            <b>Бандит 1:</b> Коротше, якщо це у них «порядок», то я за старий безлад. Там хоч правила були
+            зрозумілі.<br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

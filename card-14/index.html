@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Бродяга</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Бродяга" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Бродяга</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, справа ПП 26-53</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 14</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, витяг із особової справи ПП 26-53 <br><br>
+            Позивний: «Бродяга»<br>
+            Справжнє ім’я: невідоме<br>
+            Вік: 30-35<br>
+            Фракція: Моноліт<br>
+            Статус: командир загону<br>
+            Досьє відкрито: 10.08.2012<br><br>
+            Діяльність до утворення Полудня<br>
+            Колишній монолітівець. Діяльність до вербування в Моноліт не встановлена. Після втрати псі-зв’язку з
+            Монолітом влітку 2012 року допомагав Дегтярьову прорватись до Прип’яті у ході його розслідування провалу
+            операції «Фарватер». Співпрацював із Корпусом на ранньому етапі його формування.<br><br>
+            Психологічний портрет<br>
+            Стабільний, з ознаками хронічної втоми, має високий рівень рефлексії, внутрішній конфлікт між прагненням до
+            спокути та страхом перед власним минулим.
+            Для нього, як і для більшості колишніх монолітівців, розрив із Монолітом став екзистенційним зламом: втратою
+            опори, сенсу та зовнішньої волі. На відміну від багатьох інших, він не деградував і не зник, а спробував
+            побудувати нову структуру співіснування для таких самих «втрачених», як і він сам.<br><br>
+            Діяльність у межах Полудня<br>
+            З-поміж полуденців Бродяга найбільш схожий на того, кого можна назвати офіційним лідером. У фракції він
+            виконує роль морального орієнтира. Авторитет Бродяги базується не на силі чи страху, а на досвіді та
+            здатності брати відповідальність. Він уникає розмов про минуле Моноліту, проте водночас прагне зрозуміти, що
+            саме сталося з ним і його людьми, та чи можливе для них прощення.<br><br>
+            Діяльність після Сигналу<br>
+            Після активізації Сигналу особистість Бродяги повністю стерлася, поступившись відновленому монолітівцю,
+            здатному без вагань виконувати волю його «божества».<br><br>
+            Інтерес і ризики для Нацради НДІЧАЗ<br>
+            Бродяга становив значний аналітичний інтерес як стабілізований колишній агент псі-впливу, здатний
+            функціонувати без зовнішнього контролю. Його досвід міг бути використаний для дослідження довготривалих
+            наслідків псі-програмування та можливостей реабілітації. Але після повторної активації Сигналом став
+            неконтрольованим агентом ворожої сили з доступом до фракції та стратегічних районів Зони. Рекомендовано
+            ліквідувати власними силами або силами агентури.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 14. Вилучено у нейтрала<br>
+            <b>Нейтральний сталкер:</b> Прип’ять — це пропаще місто. Якось був я там. Якраз невдовзі після того, як
+            Дегтярьов витягнув військових з міста. Тоді ніби в Зоні все видихнуло і стало тихо. Ми з хлопцями подумали:
+            раз таке діло, гріх не зазирнути. Хотіли швидко пройтися, подивитися, що лишилось, пошукати може якийсь
+            цікавий хабар.<br><br>
+            Та Прип’ять, сам знаєш, не любить гостей. В одному з дворів потрапили ми під перехресний вогонь з декількох
+            будинків. Чую «браття, бачу невірних», «смерть грішникам» й іншу дурню цих навіжених. Я вже подумав, що все,
+            гаплик нам.<br><br>
+            І тут, як нізвідки, з’являється Бродяга з іншою групою бійців. Самі в усьому монолітівському. Спокійний, як
+            той удав, на трасери куль взагалі не зважав. Оточили нас і закрили собою від тих пришелепкуватих. Заговорив
+            із ними тихо, рівно, як той проповідник до пастви. Про те, про се, про спокій, що сталкери не вороги, що
+            знає, що вони відчувають. І диво сталося: монолітівці перестали стріляти і вийшли з укриттів із опущеною
+            зброєю.<br><br>
+            Нам лише кивнули йти геть. Ми й пішли хутко, не озиралися. Але щось у Прип’ять я більше не горю бажанням йти
+            знову. Мені і на Затоні непогано живеться.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

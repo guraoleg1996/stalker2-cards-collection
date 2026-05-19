@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Дивна квітка</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Дивна квітка" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Дивна квітка</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 34-42</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 48</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція СЧ 34-42 <br><br>
+            Дивна квітка — один із видозмінених предметів Зони. Шанси знайти Дивну квітку вкрай низькі — мало кому
+            вдається не заснути під дією аномального макового поля. Аромат квітки здатний приховати її носія від
+            гострого нюху хижаків, але з часом він вивітрюється. Щоб аромат знову набрав сили, треба лягти спати з
+            квіткою на поясі.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 48. З розповіді сталкера Морячка<br><br>
+            <b>Сталкер:</b> Якось пішов на Макове поле в пошуках артефакта. І так, пішов, хоча знав, що це
+            дурість.<br><br>
+            Але ж чим Зона не жартує? Чому не спробувати?<br><br>
+            Поле було красиве до болю в очах — червоне, рівне, ніби хтось розлив червону фарбу на поле, і тоді вона
+            розквітла. Повітря там важке, тягуче. Зробив кілька кроків — і одразу відчув, як ноги налилися свинцем, а
+            думки стали повільні, липкі. Втома накрила не різко, а лагідно. Так, ніби хтось кладе руку на плече й каже:
+            «Сядь. Відпочинь. Ти заслужив». Я зупинився, ледве не впав навколішки. Добре, що Мольфар порадив
+            енергетиками перед походом запастися. Залив у себе банку, не відчуваючи смаку. Серце застукало швидше, але
+            сон нікуди не зник, він просто відійшов на крок.<br><br>
+            Тоді я почув голоси. Спочатку тихі, майже приємні. Хтось сміявся, як старі друзі біля вогнища. Мене
+            переконували, що артефакт уже поруч, варто тільки прилягти й дати очам відпочити. Потім голоси стали
+            ближчими, настирливими. Один шепотів, що він також шукав квітку, але марно. Інший сварився, кричав, що я
+            вкрав його сон і маю повернути.<br><br>
+            Маки хитались, а вітер відривав від них пелюстки і носив над полем. У якийсь момент усі голоси злились в
+            один — теплий, глибокий, який обіцяв тишу. Я майже погодився. Але я вийшов, залишив поле. Вибрався дивом.
+            Коли озирнувся, поле мовчало. Знаєте, я досі інколи чую той голос, коли сильно втомлююся. І боюсь, що коли
+            одного разу він знову покличе — я відповім.<br><br>
+            А артефактів там немає. Можна не ходити.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

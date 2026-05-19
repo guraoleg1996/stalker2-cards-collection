@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Полудень</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Полудень" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Полудень</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція СЧ 55-46</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 32</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b>: Архів НДІЧАЗ, секція СЧ 55-46 <br><br>
+            Походження та формування<br>
+            Після відключення «Випалювача мізків» частина монолітівців утратила віру в своє божество, оскільки
+            С-Свідомість перестала їх контролювати. Роз’єднані та дезорганізовані, колишні адепти Моноліту виявилися
+            легкою здобиччю для Зони та інших фракцій. У цей період один із них, Бродяга, почав цілеспрямовано збирати
+            колишніх братів по вірі, намагаючись дати їм нову мету.<br><br>
+            Ідеологія та внутрішній стан<br>
+            Полудень об’єднує колишніх монолітівців, які намагаються віднайти себе після знищення С-Свідомості та втрати
+            зв’язку з Монолітом. Для більшості з них характерні провали пам’яті, моральна розгубленість і втрата
+            впевненості у власній ідентичності. Попри це, фракція зберігає дисципліну та бойовий потенціал, залишаючись
+            помітною силою в Зоні.<br><br>
+            Територія та статус<br>
+            Починаючи з 2013 року, Полудень осів на Дикому острові. Право фракції на цю територію було додатково
+            закріплене договором «Д-4».<br><br>
+            Лідерство та внутрішні протиріччя<br>
+            Формально Полудень не має офіційного лідера, однак більшість членів вважає таким саме Бродягу.<br><br>
+            Зовнішні відносини<br>
+            Фракція декларує нейтралітет щодо інших сил Зони, однак доступ на Дикий острів суворо обмежений і
+            дозволяється лише в окремих випадках. До представників інших фракцій полуденовці ставляться насторожено. За
+            наявною інформацією, доступ на Дикий острів отримували лише сталкери Скіф та Ріхтер.<br><br>
+            Наукова співпраця<br>
+            Окремим напрямком діяльності Полудня стало очищення територій від радіації та токсинів з метою відновлення
+            можливості безпечного життя. У цьому вони співпрацювали з професором Лодочкою, ученим НТЦ «Малахіт».<br><br>
+            Крах фракції<br>
+            Спроби мирного існування завершилися після невдалого експерименту з Альфа-артефактом у Х-11: у результаті
+            всі члени Полудня знову відчули поклик Моноліту та повернулися під його гіпнотичний вплив. Фракція фактично
+            припинила існувати. Натомість відновилось угруповання сектантів Моноліту
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 32. Вилучено у полуденівця<br><br>
+            <b>Полуденівець:</b> Іноді я намагаюся згадати, ким був до того, як у голові з’явився голос. Не обличчя —
+            обличчя не вдається пригадати. Приходять уривки: чужа кухня, стіл під вікном, тепле світло ввечері. Не знаю,
+            моє це чи я вкрав ці спогади у когось. І це лякає мене більше, ніж зустріч із мутантом.<br><br>
+            Чому я пішов у Зону? Напевно, не від хорошого життя. Сюди не приходять, коли все гаразд. Можливо, тікав —
+            від боргів, від провини, від порожнечі... А може, просто хотів зникнути так, щоб мене не шукали? Зона це
+            вміє — стирати людей краще за будь-які архіви.<br><br>
+            Тепер я сиджу на острові серед іржі, токсичних калюж і старих контейнерів. Ми називаємо це прихистком, але
+            інколи це більше схоже на відстійник для тих, хто не вписався ні в Зону, ні в життя за її межами. Я думаю
+            про Велику Землю й не відчуваю радості. Там, можливо, хтось мене чекає. А можливо, й ні.<br><br>
+            Та попри все, я ловлю себе на думці, що хочу згадати. Не щоб повернутися, а щоб знати: я колись був кимось
+            більшим, ніж зброя, ніж фанатик, ніж тінь у Зоні.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

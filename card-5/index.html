@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Війна угруповань</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Війна угруповань" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Війна угруповань</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ЧН 11-08</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 5</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b>Архів НДІЧАЗ, секція ЧН 11-08<br><br>
+                        9 серпня 2011 року відбувся Великий Викид, який був спричинений першим рейдом Стрільця. Викид
+                        перекроїв усю Зону: колись недоступні території стали відкритими, одночасно перекривши
+                        аномаліями звичні сталкерам дороги. З'явився доступ до Військових складів, Рудого лісу та
+                        Лиманська. Усі фракції прагнули першими встановити контроль над новими територіями. Ці події
+                        згодом отримали назву «Війна угруповань».<br><br>
+                        Одним із фронтів цієї Війни було протистояння сталкерів Кордону на чолі з Панотцем Валеріаном та
+                        бандитів Смітника, яких об’єднав бугор на прізвисько Йога. Нейтрали діяли настільки вдало, що
+                        змогли захистити себе навіть від спроб СОП захопити контроль над Кордоном.<br><br>
+                        Іншим важливим моментом Війни угрупувань стало чергове протистояння Долгу та Волі, у результаті
+                        якого бази Долгу були перенесені на завод «Росток», а Воля зайняла Військові склади, вибивши з
+                        них СОП. Пізніше генерал Крилов, який тоді командував Долгом, передав НДІ «Агропром» під
+                        контроль СОП. Бандити ж закріпилися на колишній базі Волі на фабриці.<br><br>
+                        Фінальна битва відбулася у Лиманську за контроль над містом. У спробах вибити звідти Моноліт і
+                        закріпитися на локації брали участь бійці Волі, Долгу, найманці та бандити.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Матеріали КПК 5<br>
+                        <b>Сидорович:</b>Я тобі, хлопче, дещо розповім про вплив. Діло було влітку 2011 року. Зона тоді
+                        кипіла, кожен тягнув ковдру на себе. Потім це назвуть Війною угрупувань. А я, як завжди, сидів
+                        на Кордоні й рахував не тільки хабарі, а й вплив. Бо в Зоні, хто має вплив — той і живе
+                        довше.<br><br>
+                        І от з’явився він. Панотець Валеріан. Старий лис, хрін з бугра. Весь такий правильний, хіба що
+                        строєм не ходить і німбу нема. Дивитися гидко. Ходить, проповіді читає про сталкерське
+                        братерство, збирає навколо себе хлопців, ніби пастух отару. А сталкери — народ простий: хто
+                        голосніше говорить і вигляд має впевнений, за тим і підуть. Я відразу зрозумів: якщо так піде
+                        далі, торгувати буду не я, а він мені дозволятиме.<br><br>
+                        Мені не сам Валеріан заважав. Мені заважало, що він порушував і так хиткий баланс сил на Кордоні
+                        та в Зоні. Почав домовлятися, миритися... А де мир — там менше стріляють, а де менше стріляють —
+                        там менше купують патронів, медикаментів і всього іншого. Бізнес, нічого особистого.<br><br>
+                        От і подумав я: а що, як трохи підштовхнути ситуацію? Військові тоді нервові були, глибоко в
+                        Зону не лізли, але стріляли без розбору. Я ж не дурень — напряму нічого робити не став. Просто
+                        пустив кілька «випадкових» чуток: мовляв, Валеріан в обхід їх буде артефакти з Зони виносити.
+                        Холецький тоді залишився б без своєї долі, а військове начальство не любить, коли їх без
+                        неофіційного грошового забезпечення лишають.<br><br>
+                        Військові, ясна річ, починають рейди, виходять на бандитів, щоб із двох сторін Валеріана до
+                        стіни притиснути. Все, як задумано.<br><br>
+                        І тут як грім серед ясного неба з Боліт вилазить Шрам. Хто такий, звідки — ніхто толком тоді не
+                        знав. Бігає, як навіжений, лізе туди, де нормальна людина й кроку не зробить. І ламає мені всю
+                        шахову партію…<br><br>
+                        От так завжди: плануєш тихо прибрати фігуру з дошки, а прибігає якийсь черговий притрушений,
+                        яких у Зоні хоч греблю гати, і гра починається заново... Зона, що з неї взяти...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Х-7</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Х-7" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">x-7</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ТЧ 10-04</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 42</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція ТЧ 10-04 <br><br>
+            Лабораторія Х-7<br>
+            Розташування: Генератори<br><br>
+            Основний напрям досліджень<br>
+            Головним напрямом роботи лабораторії Х-7 було вивчення впливу ноосфери на людську психіку та можливостей
+            двостороннього контакту з нею. Центральним елементом досліджень стали капсули типу О-КТА, призначені для
+            повного нейронного занурення операторів у ноосферний простір.<br><br>
+            Історія та статус<br>
+            Відомо, що сюди перевели дослідницьку групу у складі вчених Лебедєва, Каланчі та Суслова разом з матеріалами
+            лабораторії X-8. Причини переведення не встановлено. Після провалу експерименту у 2006 році лабораторія
+            також стала центром нейропрограмування агентів С-Свідомості за програмою S.T.A.L.K.E.R. Навесні 2012 року
+            Стрілець прорвався до лабораторії Х-7 та ліквідував усіх вчених, пов’язаних із групою С-Свідомості. Знищення
+            персоналу й критичних систем призвело до різкого зростання ноосферної нестабільності в районі
+            Генераторів.<br><br>
+            Поточний стан<br>
+            Лабораторія Х-7 вважається частково зруйнованою та недоступною. Водночас існують непрямі свідчення, що
+            окремі системи функціонують автономно, а рівень ноосферного впливу в цьому районі залишається аномально
+            високим, роблячи об’єкт одним із найнебезпечніших у Зоні. Прямий або віддалений доступ до нього дозволяє
+            контролювати Генератори та аномальну енергію.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 42. З щоденника доктора Даліна<br><br>
+            Я дедалі частіше усвідомлюю, що Генератори помилково сприймаються як окремий феномен. Без доступу до Х-7 ми
+            бачимо лише наслідки, але не механізм їхньої роботи. Водночас до лабораторії неможливо під’єднатися без
+            доступу до мережі Х. Вона — ключовий інтерфейс між людською свідомістю та ноосферними структурами, які
+            живлять і стабілізують Генератори.<br><br>
+            Саме в Х-7 батько здійснював калібрування системи, я маю виправити його помилкові розрахунки.<br><br>
+            Після втрати С-Свідомості Генератори працюють у напівавтономному режимі, що пояснює зростання нестабільності
+            та хаотичні сплески псі-випромінювання. Дані з периферії запізнілі та фрагментарні, тому ми лише реагуємо, а
+            не передбачаємо.<br><br>
+            Якщо розрахунки Агати вірні, то полковник має шанс стабілізувати Зону через останню вільну капсулу О-КТА.
+            Але все це не має сенсу, поки ми не знайшли, як туди дістатися.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

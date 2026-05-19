@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Операція "Фарватер"</title>
+
+    <link rel="shortcut icon" href="files/favicon.png">
+
+    <!-- Предзагрузка локальных шрифтов -->
+    <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Шапка -->
+        <div class="shapka">
+            <div class="osnovna-kartynka">
+                <img alt="Операція &quot;Фарватер&quot;" class="kartynka" src="files/image.jpg">
+                <div class="logo">
+                    <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp">
+                </div>
+                <div class="zagolovok">Операція "Фарватер"</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Навігація (вертикальная) -->
+            <div class="nav" role="tablist" aria-label="Навігація архіву">
+                <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content"
+                    aria-selected="true">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Архів НДІЧАЗ, секція ПП 12-08</span>
+                </button>
+                <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content"
+                    aria-selected="false">
+                    <img alt="" width="26" height="26" src="files/pda-icon.png">
+                    <span>Матеріали КПК 8</span>
+                </button>
+            </div>
+
+            <!-- Таб 1 -->
+            <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+                <!-- Локальный audio -->
+                <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio1">
+                    <div class="controls">
+                        <button id="btn1" type="button" aria-label="Play audio 1">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar1"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Архів НДІЧАЗ, секція ПП 12-08 <br><br>
+                        Враховуючи попередній досвід провалу операції «Моноліт», командування прийшло до висновку, що
+                        ліквідація С-Свідомості дозволить провести нову операцію швидко та з мінімальними втратами.
+                        Влітку 2012 року уряд ухвалив рішення розпочати військову операцію під кодовою назвою
+                        «Фарватер». Її метою було встановлення повного контролю над Чорнобильською АЕС та прилеглими
+                        територіями.<br><br>
+                        На підготовчому етапі військові аналітики та наукові підрозділи склали докладні карти аномальних
+                        полів, зафіксувавши зони підвищеної небезпеки й визначивши так званий «фарватер» — умовно
+                        безпечний маршрут для просування авіації та наземних сил. Саме цим маршрутом до району ЧАЕС мали
+                        висадитися основні підрозділи. Під час виконання завдання операція зазнала провалу: зв’язок із
+                        усіма машинами обірвався, подальша доля екіпажів і десанту залишилася невідомою.<br><br>
+                        Щоб з’ясувати обставини трагедії, Служба Безпеки України направила у Зону свого агента —
+                        колишнього сталкера, майора Олександра Дегтярьова. Працюючи під прикриттям, він мав встановити
+                        причини провалу операції «Фарватер», зібрати дані про збиті гелікоптери і, за можливості, знайти
+                        та евакуювати тих бійців, кому вдалося вижити. Згодом стане відомо, що вціліла лише одна група
+                        на чолі з полковником Ковальським, яка змогла закріпитися в пральному комбінаті в Прип’яті.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таб 2 -->
+            <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+                <!-- Локальный audio -->
+                <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+                <div class="pleyer" data-id="audio2">
+                    <div class="controls">
+                        <button id="btn2" type="button" aria-label="Play audio 2">▶</button>
+                    </div>
+                    <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-bar" id="progress-bar2"></div>
+                    </div>
+                </div>
+
+                <div class="text-wrap">
+                    <div class="description">
+                        <b>Далін:</b> Витяг із рапорту сержанта СОП зі складу групи «Скат-1»<br><br>
+                        <b>Військовий:</b> Після посадки на гелікоптерному майданчику в районі станції Янів, наша група
+                        на чолі з полковником Ковальським, опинилася на замінованій ділянці. Сержант Шлячин підірвався
+                        на міні першим, невдовзі після виходу з борта «Скат-1». Оскільки ми вже були на околицях
+                        Прип’яті, полковник обрав для евакуації точку Б28 біля кінотеатру «Прометей». Ще біля мінного
+                        поля нам зустрівся сталкер, який запропонував допомогу і показав дорогу повз аномальні поля до
+                        Прип’яті. Вже в місті ми зіткнулися із запеклим супротивом фанатиків та не змогли дістатися до
+                        Б28. Полковник прийняв рішення відійти до прального комбінату. Були організовані патрульні та
+                        спостережні пости навколо споруди. Один із патрулів згодом наткнувся на групу сталкерів на чолі
+                        з майором СБУ Дегтярьовим, як з’ясувалося. Від себе хочу додати, що це підняло моральний дух
+                        бійців, оскільки дехто вже почав боятися, що нас кинули напризволящ<br><br>
+                        На мою суб’єктивну думку, полковник Ковальський діяв відповідно до ситуації, що склалася, коли
+                        відправив групу на зачистку медсанчастини, де група потрапила у засідку монолітівців. Провини в
+                        провалі операції «Фарватер» немає, оскільки він не мав інформації про зміну розташування
+                        аномалій при її плануванні. Морального чи фізичного тиску на мене не здійснював.<br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

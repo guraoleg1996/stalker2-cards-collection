@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Компас</title>
+
+  <link rel="shortcut icon" href="files/favicon.png" />
+
+  <!-- Предзагрузка локальных шрифтов -->
+  <link rel="preload" href="files/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="files/Rubik-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Шапка -->
+    <div class="shapka">
+      <div class="osnovna-kartynka">
+        <img alt="Компас" class="kartynka" src="files/image.jpg" />
+        <div class="logo">
+          <img alt="Stalker 2 - heart of chornobyl" src="files/logo.webp" />
+        </div>
+        <div class="zagolovok">Компас</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Навігація (вертикальная) -->
+      <div class="nav" role="tablist" aria-label="Навігація архіву">
+        <button class="nav-item active" data-tab="tab1" type="button" aria-controls="tab1-content" aria-selected="true">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Архів НДІЧАЗ, секція ЧН 45-52</span>
+        </button>
+        <button class="nav-item" data-tab="tab2" type="button" aria-controls="tab2-content" aria-selected="false">
+          <img alt="" width="26" height="26" src="files/pda-icon.png" />
+          <span>Матеріали КПК 47</span>
+        </button>
+      </div>
+
+      <!-- Таб 1 -->
+      <div id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+        <!-- Локальный audio -->
+        <audio id="audio1" src="files/audio1.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio1">
+          <div class="controls">
+            <button id="btn1" type="button" aria-label="Play audio 1">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container1" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar1"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> Архів НДІЧАЗ, секція ЧН 45-52 <br><br>
+            Компас має високу ціну серед сталкерів через властивість створювати гравітаційне поле, яке здатне
+            уповільнювати або відхиляти кулі та уламки, що суттєво покращує захист його власника.<br><br>
+            Без відповідного захисту володіння артефактом є вкрай небезпечним через його сильну радіоактивність.<br><br>
+            Серед сталкерів поширена думка, що цей артефакт допомагає знайти дорогу з просторових аномалій.
+          </div>
+        </div>
+      </div>
+
+      <!-- Таб 2 -->
+      <div id="tab2-content" class="hidden" role="tabpanel" aria-labelledby="tab2">
+        <!-- Локальный audio -->
+        <audio id="audio2" src="files/audio2.ogg" preload="metadata"></audio>
+
+        <div class="pleyer" data-id="audio2">
+          <div class="controls">
+            <button id="btn2" type="button" aria-label="Play audio 2">
+              ▶
+            </button>
+          </div>
+          <div class="progress-container" id="progress-container2" role="progressbar" aria-valuemin="0"
+            aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar2"></div>
+          </div>
+        </div>
+
+        <div class="text-wrap">
+          <div class="description">
+            <b>Далін:</b> КПК № 47. З розповіді найманця в барі «100 рентген»<br><br>
+            <b>Найманець:</b> Тоді зникла не моя група, але я чув їх по рації. Справа була ще в 2011 році. Вони влізли в
+            просторову аномалію, вирішивши, що це тимчасовий зсув. Ідеш годинами, але повертаєшся до того ж уламка
+            бетону, звідки почав. Час плинув, як хотів: у когось година тягнулась вічністю, у когось ніч зникала без
+            сну. Запаси танули, разом із ними і надія.<br><br>
+            Радіо трималося дивом. Я стабільно моніторив їхню хвилю. І раптом на тій частоті з’явився спокійний голос
+            сталкера. Він не прийшов за ними. Сказав: «Я не зайду. Але слухайте уважно». Як я пізніше зрозумів, у нього
+            був Компас. Він не бачив їх, але відчував аномалію. Коригував кроки. Часом було враження, що поруч із ним
+            був хтось інший, хто давав вказівки. Коли вони вийшли, зв’язок обірвався.<br><br>
+            Сталкера вони так і не побачили. Але всі вийшли живими. Після цього я почав інакше ставитися до сталкерів із
+            їхніми часом іграми у «шляхетність».
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
